@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      상단 페이지 탬에 표시되는 아이콘 입니다.
+      'resource' 폴더 내에 'favicon.ico'라는 이름의 이미지를 저장해 주십시오.
+    -->
+    <link rel="icon" href="resource/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles/share.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/image-opacity.js" defer></script>
+
+    <!--
+      상단 페이지 탭에 표 시되는 부분입니다.
+      아래 'Portfolio' 대신 원하는 페이지 이름을 입력해 주십시오.
+    -->
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li>
+          <!--
+            페이지 상단(header)의 로고 표시 부분입니다.
+            아래 'Portfolio'대신 표시하고자 하는 로고(text)를 입력해 주십시오.
+          -->
+          <a href="index.html">Portfolio</a>
+        </li>
+        <li>
+          <button type="button">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+
+          <ul id="laptop-menu">
+            <li>
+              <a href="index.html#profile">Profile</a>
+            </li>
+            <li>
+              <a href="index.html#introduction">Introduction</a>
+            </li>
+            <li>
+              <a href="index.html#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <aside>
+      <button type="button">
+        <img src="resource/exit-icon.png" alt="exit icon" />
+      </button>
+
+      <div id="menu-contents">
+        <h2>Menu</h2>
+
+        <ul>
+          <li>
+            <a href="index.html#profile">Profile</a>
+          </li>
+          <li>
+            <a href="index.html#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="index.html#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <section id="profile">
+        <ul id="profile-contents">
+          <li>
+            <!--
+              프로필 이미지 입니다.
+              'resource' 폴더 내에 'profile_image.jpg' 파일을 저장해 주십시오.
+            -->
+            <img
+              src="resource/profile_image.jpg"
+              alt="Profile image"
+              id="profile-image"
+            />
+          </li>
+          <li>
+            <ul>
+              <li>
+                <!--
+                  아래 '이름'에 본인의 이름을 입력해 주십시오.
+                -->
+                <h2>이름</h2>
+              </li>
+              <li>
+                <!--
+                  아래 '직업'에 본인의 직업 또는 지원 분야를 입력해 주십시오.
+                -->
+                <h3>직업</h3>
+              </li>
+              <li>
+                <!--
+                  아래 <p> ~ </p> 사이에 자신을 표현할 수 있는 한 문장을 입력해 주십시오.
+                -->
+                <p>
+                  커피 한 잔에 진심을 담아 고객의 하루를 특별하게 만드는
+                  바리스타 OOO입니다.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <img src="resource/arrow.png" alt="next page image" class="next-page" />
+      </section>
+
+      <!--
+        뒷 배경 이미지는 'styles'폴더 내의 'styles.css'폴더로 이동해 설명을 찾아 주십시오.
+      -->
+      <section id="introduction">
+        <div id="introduction-contents">
+          <ul>
+            <li>
+              <!--
+                아래 '<p> ~ </p>'사이에 자신이 표현하고 하는 글귀를 입력해 주십시오.
+                이때 키워드 중심으로 작성을 하시면 좋고, 키워드는 '<span> ~ </span>'사이에 입력해 주십시오.
+              -->
+              <p>
+                <span>진심을</span> 담아 내린 커피 한 잔으로
+                <span>섬세한 감각을</span> 전하고 고객과
+                <span>따뜻한 소통을</span> 이어가도록 노력하겠습니다.
+              </p>
+            </li>
+            <li>
+              <!--
+                '<strong> ~ </strong>'사이에 email을 입력해 주십시오.
+              -->
+              <p>
+                <strong>email@email.com</strong>
+              </p>
+            </li>
+            <li>
+              <!--
+                '<strong> ~ </strong>'사이에 연락처를 입력해 주십시오.
+              -->
+              <p>
+                <strong>010-0000-0000</strong>
+              </p>
+            </li>
+          </ul>
+
+          <img
+            src="resource/arrow.png"
+            alt="next page image"
+            class="next-page"
+          />
+        </div>
+
+        <div id="white-gradient"></div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <!--
+          지금부터 아래 나오는 '<h3> ~ </h3>'사이와 '<p> ~ </p>'사이의 글귀를 수정하면 됩니다.
+          각각 카드에 해당하는 이미지는 'styles'폴더 내의 'styles.css'파일로 이동해 설명을 찾으시면 됩니다.
+        -->
+        <ul id="card-contents">
+          <li>
+            <div class="card" id="card1">
+              <ul>
+                <li>
+                  <h3>시그니처 메뉴</h3>
+                </li>
+                <li>
+                  <p>
+                    고객님의 취향을 반영한 독창적인 음료를 개발하여 카페의
+                    개성을 표현하고, 특별한 경험을 제공합니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="card" id="card2">
+              <ul>
+                <li>
+                  <h3>라떼아트</h3>
+                </li>
+                <li>
+                  <p>
+                    라떼아트 기술을 통해 고객님께 시각적 즐거움을 선사합니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="card" id="card3">
+              <ul>
+                <li>
+                  <h3>핸드드립</h3>
+                </li>
+                <li>
+                  <p>
+                    원두의 맛과 향을 최적으로 끌어내는 핸드드립과 커핑 경험을
+                    바탕으로 다양한 원두의 프로파일링 작업을 진행했습니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <p>Copyright 2025. Tief. all right reserved.</p>
+        </li>
+        <li>
+          <ul id="license-list">
+            <li>
+              <a href="font-license.html">Font license</a>
+            </li>
+            <li>
+              <a href="image-license.html">Image license</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

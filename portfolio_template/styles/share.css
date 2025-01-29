@@ -1,0 +1,262 @@
+html {
+  --color-gray-800: #383837;
+  --color-gray-900: #1c1c1b;
+
+  --colora-gray-900-0: rgba(28, 28, 27, 0);
+  --colora-gray-900-75: rgba(28, 28, 27, 0.7);
+
+  --color-pink-500: #ce4a7e;
+  --color-pink-600: #a63d67;
+
+  --colora-pink-500: rgba(206, 74, 126, 0.5);
+
+  --color-white-100: #ffffff;
+
+  --colora-white-100: rgba(255, 255, 255, 0);
+
+  --size-font-basic: 1rem;
+  --size-font-large: 1.75rem;
+  --size-font-xlarge: 2rem;
+
+  --size-space-xsmall: 0.4rem;
+  --size-space-small: 0.75rem;
+  --size-space-basic: 1rem;
+  --size-space-large: 2rem;
+  --size-space-xlarge: 3rem;
+
+  --size-border-radius-large: 2rem;
+}
+
+body {
+  background-color: var(--color-gray-900);
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: var(--size-space-basic);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color-pink-500);
+  font-size: var(--size-font-large);
+  font-weight: 800;
+}
+
+header button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: inherit;
+  width: var(--size-space-large);
+  height: var(--size-space-large);
+  padding: 0;
+}
+
+header button:hover,
+header button:active,
+aside button:hover,
+aside button:active {
+  background-color: var(--color-gray-800);
+}
+
+header div {
+  background-color: var(--color-pink-500);
+  height: var(--size-space-xsmall);
+  width: 100%;
+}
+
+#laptop-menu {
+  display: none;
+}
+
+aside {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-900);
+  width: 100%;
+  height: 100vh;
+}
+
+aside button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+aside img {
+  width: var(--size-space-xlarge);
+}
+
+#menu-contents {
+  margin: 5rem var(--size-space-basic);
+}
+
+#menu-contents h2 {
+  color: var(--color-pink-500);
+  font-size: var(--size-font-large);
+  font-weight: 800;
+}
+
+#menu-contents ul {
+  padding: 0 var(--size-space-basic);
+}
+
+#menu-contents li {
+  margin: 0.5rem 0;
+}
+
+#menu-contents a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+#menu-contents a:hover,
+#menu-contents a:active {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+footer p {
+  color: var(--color-pink-500);
+  font-weight: 700;
+}
+
+#license-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#license-list li {
+  margin: 0.5rem;
+}
+
+#license-list a {
+  color: white;
+  text-decoration: none;
+}
+
+#license-list a:hover,
+#license-list a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (min-width: 48rem) {
+  header ul {
+    padding: var(--size-space-basic) var(--size-space-large);
+  }
+
+  header a {
+    font-size: 2.75rem;
+  }
+
+  header button {
+    width: var(--size-space-xlarge);
+    height: var(--size-space-xlarge);
+  }
+
+  header div {
+    height: 0.6rem;
+  }
+
+  aside button {
+    margin: 0 var(--size-space-basic);
+  }
+
+  aside img {
+    width: 4rem;
+  }
+
+  #menu-contents {
+    margin: 7.5rem var(--size-space-large);
+  }
+
+  #menu-contents h2 {
+    font-size: 2.75rem;
+  }
+
+  #menu-contents a {
+    font-size: var(--size-font-large);
+  }
+
+  footer p,
+  #license-list a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  header a {
+    font-size: 2.25rem;
+  }
+
+  header ul {
+    width: 64rem;
+    margin: 0 auto;
+    padding: var(--size-space-small) var(--size-space-basic);
+  }
+
+  header button {
+    display: none;
+  }
+
+  #laptop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 32rem;
+  }
+
+  #laptop-menu li {
+    margin: 0 0.5rem;
+  }
+
+  #laptop-menu a {
+    font-size: 1.5rem;
+  }
+
+  #laptop-menu a:hover,
+  #laptop-menu a:active {
+    color: var(--color-pink-600);
+  }
+
+  footer p,
+  #license-list a {
+    font-size: var(--size-font-basic);
+  }
+}

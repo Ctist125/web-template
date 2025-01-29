@@ -1,0 +1,24 @@
+main {
+  height: 80vh;
+}
+
+.license-contents {
+  padding: 5rem 0;
+}
+
+@media (min-width: 48rem) {
+  main {
+    height: 82.5vh;
+  }
+
+  .license-contents {
+    margin: 0 var(--size-space-basic);
+  }
+}
+
+@media (min-width: 48rem) {
+  main {
+    width: 64rem;
+    margin: 0 auto;
+  }
+}

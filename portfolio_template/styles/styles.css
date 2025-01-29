@@ -1,0 +1,294 @@
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 var(--size-space-basic);
+}
+
+#profile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: -3rem 0 0 0;
+  padding: 0;
+}
+
+#profile li,
+#introduction-contents li {
+  text-align: center;
+}
+
+#profile h2 {
+  font-size: var(--size-font-xlarge);
+  text-shadow: 4px 6px 12px black;
+  margin: 0.5rem 0;
+}
+
+#profile h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+#profile p {
+  margin: 0.5rem 0;
+}
+
+#profile-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  border: var(--size-space-small) solid var(--colora-pink-500);
+  border-radius: 7rem;
+}
+
+.next-page {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  bottom: -5rem;
+}
+
+/*
+  'resource'폴더 내에 'introduction_background.jpg'라는 이름의 이미지를 저장해 주십시오.
+*/
+#introduction {
+  background-image: url("../resource/introduction_background.jpg");
+  background-size: auto 100%;
+  /*
+    만약 자신이 표현하고자 하는 위치와 맞지 않는다면, 아래 60%라고 적힌 수치만 변경해 좌우를 맞춰 주십시오.
+  */
+  background-position: 60% center;
+  height: 150vh;
+}
+
+#introduction-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--color-gray-900),
+    var(--colora-gray-900-0)
+  );
+}
+
+#introduction-contents ul {
+  list-style: none;
+  padding: 0 var(--size-space-basic);
+}
+
+#introduction-contents p {
+  margin: 0.5rem;
+}
+
+#introduction-contents span {
+  font-weight: 700;
+  color: var(--color-pink-500);
+}
+
+#white-gradient {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--colora-white-100),
+    var(--color-white-100)
+  );
+}
+
+#portfolio {
+  background-color: white;
+  padding: var(--size-space-xlarge) var(--size-space-basic);
+}
+
+#portfolio h2 {
+  text-align: center;
+  color: var(--color-gray-900);
+  font-weight: 800;
+  margin: 0;
+}
+
+#card-contents {
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  align-items: end;
+  color: white;
+  border-radius: var(--size-border-radius-large);
+  background-size: cover;
+  height: 18rem;
+  overflow: hidden;
+  margin: var(--size-space-xlarge) 0 0 0;
+  background-position: center center;
+}
+
+.card ul {
+  background-color: var(--colora-gray-900-75);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 45%;
+  width: 100%;
+}
+
+.card li {
+  padding: 0 var(--size-space-basic);
+}
+
+/*
+  카드의 순서대로 이미지를 각각 아래와 같은 이름으로 저장하면 됩니다.
+  portfolio_image1.jpg
+  portfolio_image2.jpg
+  portfolio_image3.jpg
+*/
+#card1 {
+  background-image: url("../resource/portfolio_image1.jpg");
+}
+
+#card2 {
+  background-image: url("../resource/portfolio_image2.jpg");
+}
+
+#card3 {
+  background-image: url("../resource/portfolio_image3.jpg");
+}
+
+@media (min-width: 48rem) {
+  #profile {
+    padding: 0 var(--size-space-large);
+  }
+
+  #profile h2 {
+    font-size: 3rem;
+  }
+
+  #profile h3 {
+    font-size: 2rem;
+  }
+
+  #profile p {
+    font-size: 1.5rem;
+  }
+
+  #profile-image {
+    width: 30rem;
+    height: 30rem;
+    border: var(--size-space-basic) solid var(--colora-pink-500);
+    border-radius: 16rem;
+  }
+
+  .next-page {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #introduction-contents p {
+    font-size: 1.5rem;
+    margin: var(--size-space-basic) 0.5rem;
+  }
+
+  #portfolio {
+    padding: var(--size-space-basic) var(--size-space-large);
+  }
+
+  #portfolio h2 {
+    font-size: 2.75rem;
+  }
+
+  .card {
+    height: 40rem;
+  }
+
+  .card h3 {
+    font-size: var(--size-font-xlarge);
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  #profile {
+    width: 64rem;
+    margin: 0 auto;
+    padding: var(--size-space-xlarge) 0;
+  }
+
+  #profile #profile-contents {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #profile #profile-contents li {
+    margin: 0 var(--size-space-basic);
+  }
+
+  #profile ul {
+    align-items: start;
+  }
+
+  #profile h2 {
+    font-size: 2.25rem;
+  }
+
+  #profile h3 {
+    font-size: var(--size-font-large);
+  }
+
+  #profile p {
+    font-size: var(--size-font-basic);
+  }
+
+  #profile-image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .next-page {
+    bottom: -1rem;
+  }
+
+  #introduction-contents ul {
+    width: 64rem;
+    box-sizing: border-box;
+  }
+
+  #portfolio {
+    padding: var(--size-space-basic), 0;
+  }
+
+  #portfolio h2 {
+    font-size: var(--size-font-large);
+  }
+
+  #card-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--size-space-basic);
+    width: 64rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .card {
+    height: 25rem;
+    margin: var(--size-space-xlarge) 1rem;
+  }
+
+  .card h3 {
+    font-size: var(--size-font-large);
+  }
+
+  .card p {
+    font-size: var(--size-font-basic);
+  }
+}
