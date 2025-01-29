@@ -128,6 +128,7 @@
   overflow: hidden;
   margin: var(--size-space-xlarge) 0 0 0;
   background-position: center center;
+  box-shadow: 4px 6px 12px var(--colora-gray-900-75);
 }
 
 .card ul {

@@ -3,7 +3,7 @@
 ## 이미지
 
 - **이미지는 저작권 보호를 위해 해당 파일에서 삭제했습니다.**
-    - 예시와 동일하게 이미지를 보려면 'resource' 경로에 아래와 같이 설정해 주십시오.
+    - 예시와 동일하게 이미지를 보려면 아래와 같이 설정해 주십시오.
 
 - favicon.ico
     - https://icon-icons.com/icon/checkbox-edit-pen-pencil/107516
